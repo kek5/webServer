@@ -1,0 +1,64 @@
+body {
+    width:320px;
+    height:480px;
+}
+
+#LogIn {
+    width: 240px;
+    height: 230px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#LogIn > h1 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: chartreuse;
+    padding-bottom: 10px;
+    box-shadow: 1px 1px 1px 1px purple;
+}
+
+#LogInForm {
+    /*border: 1px solid black;*/
+    margin-top: 5px;
+}
+#LogInForm > strong {
+    float: left;
+    padding-left: 30px;
+}
+#signin {
+    float: left;
+    margin-left: 25%;
+}
+#signup {
+    float: right;
+    margin-right: 25%;
+}
+#name {
+    margin-bottom: 10px;
+}
+#name:hover, #password:hover {
+    background-color: green;
+}
+#name, #password {
+    text-align: left;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+}
+.buttons {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+    margin-top: 15px;
+    display: inline;
+    text-align: center;
+    border-radius: 5px;
+    font-family: "Droid Sans Hebrew";
+}

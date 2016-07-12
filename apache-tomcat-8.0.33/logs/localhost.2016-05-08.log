@@ -1,0 +1,441 @@
+08-May-2016 02:50:09.567 SEVERE [http-nio-80-exec-8] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet jsp threw exception
+ java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Integer
+	at java.lang.Integer.compareTo(Integer.java:52)
+	at java.util.TreeMap.getEntry(TreeMap.java:352)
+	at java.util.TreeMap.get(TreeMap.java:278)
+	at org.apache.jsp.hello.get.test1_jsp._jspService(test1_jsp.java:165)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:720)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:466)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:391)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:318)
+	at hello.HelloWeb.doGet(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1502)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1458)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-May-2016 02:50:09.567 SEVERE [http-nio-80-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [HelloWeb] in context with path [] threw exception [An exception occurred processing JSP page /hello/get/test1.jsp at line 36
+
+33:                     for (int i = 0; i < size; i++) { %>
+34:                         <%=person.getParameters().get(key)[i] + ", "%>
+35:                     <%}%>
+36:                 <%=person.getParameters().get(last) + "."%>
+37:             </td>
+38:         <%} else {%>
+39:             <td><%=person.getParameters().get(key)[0]%></td>
+
+
+Stacktrace:] with root cause
+ java.lang.ClassCastException: java.lang.String cannot be cast to java.lang.Integer
+	at java.lang.Integer.compareTo(Integer.java:52)
+	at java.util.TreeMap.getEntry(TreeMap.java:352)
+	at java.util.TreeMap.get(TreeMap.java:278)
+	at org.apache.jsp.hello.get.test1_jsp._jspService(test1_jsp.java:165)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:720)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:466)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:391)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:318)
+	at hello.HelloWeb.doGet(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1502)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1458)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-May-2016 02:51:57.341 SEVERE [http-nio-80-exec-1] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet jsp threw exception
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 42 in the jsp file: /hello/get/test1.jsp
+Syntax error, insert "Finally" to complete TryStatement
+39:             <td><%=person.getParameters().get(key)[0]%></td>
+40:         </tr>
+41:         <%}%>
+42:     <%}%>
+43: 
+44: </table>
+45: </body>
+
+
+An error occurred at line: [184] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [186] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [186] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [187] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [187] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [189] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [190] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [192] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [195] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [195] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [198] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [199] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:720)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:466)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:391)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:318)
+	at hello.HelloWeb.doGet(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1502)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1458)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-May-2016 02:51:57.341 SEVERE [http-nio-80-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [HelloWeb] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 42 in the jsp file: /hello/get/test1.jsp
+Syntax error, insert "Finally" to complete TryStatement
+39:             <td><%=person.getParameters().get(key)[0]%></td>
+40:         </tr>
+41:         <%}%>
+42:     <%}%>
+43: 
+44: </table>
+45: </body>
+
+
+An error occurred at line: [184] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [186] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [186] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [187] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [187] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [189] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [190] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [192] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [195] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [195] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [198] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [199] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 42 in the jsp file: /hello/get/test1.jsp
+Syntax error, insert "Finally" to complete TryStatement
+39:             <td><%=person.getParameters().get(key)[0]%></td>
+40:         </tr>
+41:         <%}%>
+42:     <%}%>
+43: 
+44: </table>
+45: </body>
+
+
+An error occurred at line: [184] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+Syntax error on token "catch", Identifier expected
+
+An error occurred at line: [186] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [186] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+_jspx_out cannot be resolved to a variable
+
+An error occurred at line: [187] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved to a variable
+
+An error occurred at line: [187] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [189] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+response cannot be resolved
+
+An error occurred at line: [190] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [192] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+out cannot be resolved
+
+An error occurred at line: [195] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+An error occurred at line: [195] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+_jspx_page_context cannot be resolved
+
+An error occurred at line: [198] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+Syntax error on token "finally", { expected
+
+An error occurred at line: [199] in the generated java file: [/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/work/Catalina/localhost/ROOT/org/apache/jsp/hello/get/test1_jsp.java]
+_jspx_page_context cannot be resolved to a variable
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:198)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:457)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:363)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:720)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:466)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:391)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:318)
+	at hello.HelloWeb.doGet(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1502)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1458)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-May-2016 02:53:29.026 SEVERE [http-nio-80-exec-1] org.apache.catalina.core.ApplicationDispatcher.invoke Servlet.service() for servlet jsp threw exception
+ java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.apache.jsp.hello.get.test1_jsp._jspService(test1_jsp.java:174)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:720)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:466)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:391)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:318)
+	at hello.HelloWeb.doGet(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1502)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1458)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+08-May-2016 02:53:29.026 SEVERE [http-nio-80-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [HelloWeb] in context with path [] threw exception [An exception occurred processing JSP page /hello/get/test1.jsp at line 40
+
+37:             <%--</td>--%>
+38:         <%--<%} else {%>--%>
+39:             <td><%=person.getParameters().get(key)[0]%></td>
+40:             <td><%=person.getParameters().get(key)[1]%></td>
+41:         </tr>
+42:         <%--<%}%>--%>
+43:     <%}%>
+
+
+Stacktrace:] with root cause
+ java.lang.ArrayIndexOutOfBoundsException: 1
+	at org.apache.jsp.hello.get.test1_jsp._jspService(test1_jsp.java:174)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:438)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:396)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:340)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:720)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:466)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:391)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:318)
+	at hello.HelloWeb.doGet(Unknown Source)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1502)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1458)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+

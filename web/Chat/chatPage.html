@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../Context/css/ChatCSS/chatPage.css">
+    <script type="text/javascript" src="../Context/js/myJS.js" ></script>
+    <meta charset="UTF-8">
+    <title>Chat Window</title>
+</head>
+<body id="chatLayout">
+
+<div id="chatWraper">
+
+    <div id="outputWrap">
+        <div class="contactDisplay">
+            <div id="contactName">First and last name</div>
+        </div>
+        <div class="textfield"></div>
+    </div>
+
+
+    <div id="inputWrap">
+        <form id="sendMessageForm">
+
+            <div class="InputArea">
+                <textarea name="message" class="TextInput" rows="3"></textarea>
+                <input id="sendButton" class="THE_BIG_RED_BUTTON" type="submit" value="Send">
+            </div>
+
+            <div id="buttonsBlock">
+                <button class="emojiDropDown" type="button" onclick="showEmojiImages()">Drop
+                </button>
+            </div>
+
+            <div id="emojiDropdownWraper">
+                <div id="emojis">
+                    <a class="emoji_in_box" href="../Context/images/blank.gif" onclick="">
+                        <img class="emoji" alt="gg" src="../Context/images/Emojis/download.jpg">
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>

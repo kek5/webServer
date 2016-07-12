@@ -1,0 +1,115 @@
+#chatWraper {
+    /*float: left;*/
+    left: 10%;
+    max-width: 320px;
+    height: 480px;
+    border: 1px solid green;
+    /*max-width: 200px;*/
+    /*max-height: 350px;*/
+
+}
+#chatWraper #outputWrap {
+    display: block;
+    position: relative;
+    height: 70%;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#outputWrap .contactDisplay {
+    min-height: 17px;
+    max-height: 30px;
+    height: 5%;
+    display: block;
+}
+
+.contactDisplay #contactName {
+    left: 4%;
+    height: 5%;
+    position: relative;
+    width: auto;
+    float: left;
+}
+#outputWrap .textfield {
+    display: block;
+    resize: none;
+    position: relative;
+    left: 3%;
+    width: 94%;
+    height: 90%;
+    /*margin: 10px;*/
+    border: 1px solid blue;
+
+
+    -webkit-box-sizing: border-box;  /* how? */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#chatWraper #inputWrap {
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+#inputWrap .sendMessageForm {
+    position: relative;
+    border: 1px solid red;
+    display: inline-block;
+
+}
+.sendMessageForm .InputArea {
+    display: inline-block;
+}
+.InputArea .TextInput {
+    position: relative;
+    width: 75%;
+}
+.InputArea .THE_BIG_RED_BUTTON {
+    position: relative;
+    float: right;
+    width: 23%;
+    height: 50px;
+    /*max-width: 70px;*/
+    max-height: 50px;
+    background-color: red;
+}
+.sendMessageForm #buttonsBlock {
+    position: relative;
+}
+
+#emojiDropdownWraper{
+    width: 250px;
+    height: 250px;
+}
+#emojiDropdownWraper #emojis {
+    display: none;
+    position: relative;
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#emojiDropdownWraper {
+    position: relative;
+    width: 25%;
+    height: 25%;
+}
+
+
+/*#emojiDropdownWraper {*/
+    /*display: none;*/
+    /*position: absolute;*/
+    /*min-width: 160px;*/
+    /*overflow: auto;*/
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+/*}*/

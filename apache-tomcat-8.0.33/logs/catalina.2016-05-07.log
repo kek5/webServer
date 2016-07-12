@@ -1,0 +1,661 @@
+07-May-2016 18:57:37.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 18:57:37.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 18:57:37.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 18:57:37.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 18:57:37.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 18:57:37.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 18:57:37.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 18:57:37.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 18:57:37.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 18:57:37.838 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 18:57:37.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 18:57:37.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 18:57:37.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 18:57:37.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 18:57:37.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 18:57:37.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 18:57:37.839 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 18:57:37.839 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 18:57:38.478 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 18:57:38.543 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 18:57:38.545 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 18:57:38.546 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 18:57:38.546 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1846 ms
+07-May-2016 18:57:38.606 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 18:57:38.606 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 18:57:38.885 SEVERE [Catalina-startStop-1] org.apache.catalina.core.ContainerBase.startInternal A child container failed during start
+ java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:153)
+	... 6 more
+Caused by: java.lang.IllegalArgumentException: Invalid <url-pattern> hello/post in servlet mapping
+	at org.apache.catalina.core.StandardContext.addServletMapping(StandardContext.java:3153)
+	at org.apache.catalina.core.StandardContext.addServletMapping(StandardContext.java:3128)
+	at org.apache.catalina.startup.ContextConfig.configureContext(ContextConfig.java:1376)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1184)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	... 6 more
+
+07-May-2016 18:57:38.886 SEVERE [main] org.apache.catalina.core.ContainerBase.startInternal A child container failed during start
+ java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost]]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:916)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:787)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:629)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:351)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:485)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:153)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1408)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1398)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:871)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	... 6 more
+
+07-May-2016 18:57:38.887 SEVERE [main] org.apache.catalina.startup.Catalina.start The required Server component failed to start so Tomcat is unable to start.
+ org.apache.catalina.LifecycleException: Failed to start component [StandardServer[8005]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:153)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:629)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:351)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:485)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardService[Catalina]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:153)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:787)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	... 7 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:153)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:441)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	... 9 more
+Caused by: org.apache.catalina.LifecycleException: A child container failed during start
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:924)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	... 11 more
+
+07-May-2016 18:57:38.887 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-May-2016 18:57:38.887 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 18:57:38.887 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-May-2016 18:57:38.888 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-May-2016 18:57:38.889 SEVERE [main] org.apache.coyote.AbstractProtocol.destroy Failed to destroy end point associated with ProtocolHandler ["http-nio-80"]
+ java.lang.NullPointerException
+	at org.apache.tomcat.util.net.NioEndpoint.releaseCaches(NioEndpoint.java:305)
+	at org.apache.tomcat.util.net.NioEndpoint.unbind(NioEndpoint.java:481)
+	at org.apache.tomcat.util.net.AbstractEndpoint.destroy(AbstractEndpoint.java:831)
+	at org.apache.coyote.AbstractProtocol.destroy(AbstractProtocol.java:533)
+	at org.apache.catalina.connector.Connector.destroyInternal(Connector.java:1023)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:297)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:589)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:297)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:877)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:297)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:351)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:485)
+
+07-May-2016 18:57:38.889 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 18:57:38.889 SEVERE [main] org.apache.coyote.AbstractProtocol.destroy Failed to destroy end point associated with ProtocolHandler ["ajp-nio-8009"]
+ java.lang.NullPointerException
+	at org.apache.tomcat.util.net.NioEndpoint.releaseCaches(NioEndpoint.java:305)
+	at org.apache.tomcat.util.net.NioEndpoint.unbind(NioEndpoint.java:481)
+	at org.apache.tomcat.util.net.AbstractEndpoint.destroy(AbstractEndpoint.java:831)
+	at org.apache.coyote.AbstractProtocol.destroy(AbstractProtocol.java:533)
+	at org.apache.catalina.connector.Connector.destroyInternal(Connector.java:1023)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:297)
+	at org.apache.catalina.core.StandardService.destroyInternal(StandardService.java:589)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:297)
+	at org.apache.catalina.core.StandardServer.destroyInternal(StandardServer.java:877)
+	at org.apache.catalina.util.LifecycleBase.destroy(LifecycleBase.java:297)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:633)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:351)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:485)
+
+07-May-2016 18:59:06.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 18:59:06.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 18:59:06.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 18:59:06.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 18:59:06.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 18:59:06.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 18:59:06.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 18:59:06.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 18:59:06.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 18:59:06.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 18:59:06.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 18:59:06.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 18:59:06.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 18:59:06.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 18:59:06.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 18:59:06.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 18:59:06.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 18:59:06.569 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 18:59:06.672 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 18:59:06.683 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 18:59:06.685 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 18:59:06.686 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 18:59:06.687 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 415 ms
+07-May-2016 18:59:06.702 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 18:59:06.702 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 18:59:07.106 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-May-2016 18:59:07.109 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 18:59:07.115 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 427 ms
+07-May-2016 19:00:07.111 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+07-May-2016 19:00:07.167 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+07-May-2016 19:00:11.912 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-May-2016 19:00:11.913 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-May-2016 19:00:11.965 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 19:00:12.015 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-May-2016 19:00:12.022 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+07-May-2016 19:00:12.023 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 19:00:12.023 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-May-2016 19:00:12.024 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 19:00:13.981 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 19:00:13.982 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 19:00:13.982 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 19:00:13.982 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 19:00:13.982 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 19:00:13.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 19:00:13.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 19:00:13.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 19:00:13.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 19:00:13.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 19:00:13.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 19:00:13.983 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 19:00:13.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 19:00:13.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 19:00:13.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 19:00:13.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 19:00:13.984 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 19:00:13.984 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 19:00:14.088 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 19:00:14.099 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 19:00:14.101 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 19:00:14.102 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 19:00:14.102 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 442 ms
+07-May-2016 19:00:14.117 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 19:00:14.117 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 19:00:14.326 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-May-2016 19:00:14.330 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 19:00:14.367 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 264 ms
+07-May-2016 20:26:50.336 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-May-2016 20:26:50.337 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-May-2016 20:26:50.390 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:26:50.440 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-May-2016 20:26:50.459 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+07-May-2016 20:26:50.461 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:26:50.462 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-May-2016 20:26:50.462 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:28:59.458 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 20:28:59.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 20:28:59.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 20:28:59.459 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 20:28:59.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 20:28:59.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 20:28:59.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 20:28:59.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 20:28:59.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 20:28:59.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:28:59.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:28:59.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 20:28:59.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 20:28:59.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 20:28:59.460 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:28:59.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:28:59.461 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 20:28:59.461 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 20:28:59.571 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 20:28:59.582 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 20:28:59.583 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:28:59.585 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 20:28:59.585 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 431 ms
+07-May-2016 20:28:59.602 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 20:28:59.602 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 20:28:59.820 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-May-2016 20:28:59.824 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:28:59.851 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 265 ms
+07-May-2016 20:30:31.771 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-May-2016 20:30:31.772 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-May-2016 20:30:31.824 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:30:31.874 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-May-2016 20:30:31.893 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+07-May-2016 20:30:31.895 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:30:31.896 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-May-2016 20:30:31.896 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:30:33.418 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 20:30:33.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 20:30:33.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 20:30:33.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 20:30:33.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 20:30:33.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 20:30:33.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 20:30:33.420 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 20:30:33.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 20:30:33.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:30:33.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:30:33.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 20:30:33.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 20:30:33.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 20:30:33.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:30:33.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:30:33.421 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 20:30:33.422 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 20:30:33.530 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 20:30:33.541 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 20:30:33.543 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:30:33.544 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 20:30:33.544 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 432 ms
+07-May-2016 20:30:33.559 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 20:30:33.559 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 20:30:33.820 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-May-2016 20:30:33.825 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:30:33.839 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 294 ms
+07-May-2016 20:31:56.276 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-May-2016 20:31:56.277 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-May-2016 20:31:56.329 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:31:56.380 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-May-2016 20:31:56.392 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+07-May-2016 20:31:56.395 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:31:56.396 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-May-2016 20:31:56.396 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:31:57.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 20:31:57.886 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 20:31:57.886 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 20:31:57.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 20:31:57.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 20:31:57.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 20:31:57.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 20:31:57.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 20:31:57.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 20:31:57.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:31:57.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:31:57.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 20:31:57.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 20:31:57.887 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 20:31:57.888 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:31:57.888 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:31:57.888 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 20:31:57.888 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 20:31:57.996 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 20:31:58.008 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 20:31:58.010 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:31:58.011 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 20:31:58.011 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 429 ms
+07-May-2016 20:31:58.028 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 20:31:58.028 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 20:31:58.261 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-May-2016 20:31:58.265 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:31:58.271 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 259 ms
+07-May-2016 20:32:38.267 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+07-May-2016 20:32:38.306 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+07-May-2016 20:32:38.981 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-May-2016 20:32:38.982 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-May-2016 20:32:39.034 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:32:39.084 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-May-2016 20:32:39.091 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+07-May-2016 20:32:39.183 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:32:39.184 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-May-2016 20:32:39.185 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:32:40.673 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 20:32:40.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 20:32:40.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 20:32:40.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 20:32:40.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 20:32:40.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 20:32:40.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 20:32:40.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 20:32:40.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 20:32:40.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:32:40.674 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:32:40.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 20:32:40.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 20:32:40.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 20:32:40.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:32:40.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:32:40.675 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 20:32:40.675 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 20:32:40.784 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 20:32:40.795 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 20:32:40.796 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:32:40.798 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 20:32:40.798 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 422 ms
+07-May-2016 20:32:40.814 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 20:32:40.814 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 20:32:41.018 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-May-2016 20:32:41.023 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:32:41.039 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 240 ms
+07-May-2016 20:34:08.521 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-May-2016 20:34:08.522 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-May-2016 20:34:08.574 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:34:08.624 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-May-2016 20:34:08.641 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+07-May-2016 20:34:08.643 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:34:08.643 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-May-2016 20:34:08.644 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:34:09.883 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 20:34:09.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 20:34:09.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 20:34:09.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 20:34:09.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 20:34:09.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 20:34:09.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 20:34:09.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 20:34:09.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 20:34:09.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:34:09.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:34:09.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 20:34:09.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 20:34:09.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 20:34:09.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:34:09.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:34:09.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 20:34:09.885 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 20:34:09.997 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 20:34:10.008 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 20:34:10.010 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:34:10.012 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 20:34:10.012 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 432 ms
+07-May-2016 20:34:10.029 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 20:34:10.029 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 20:34:10.270 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-May-2016 20:34:10.276 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:34:10.291 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 278 ms
+07-May-2016 20:35:53.256 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-May-2016 20:35:53.256 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-May-2016 20:35:53.309 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:35:53.360 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-May-2016 20:35:53.372 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+07-May-2016 20:35:53.466 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:35:53.486 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-May-2016 20:35:53.486 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:35:55.045 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 20:35:55.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 20:35:55.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 20:35:55.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 20:35:55.046 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 20:35:55.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 20:35:55.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 20:35:55.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 20:35:55.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 20:35:55.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:35:55.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:35:55.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 20:35:55.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 20:35:55.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 20:35:55.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:35:55.047 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 20:35:55.048 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 20:35:55.048 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 20:35:55.167 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 20:35:55.181 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 20:35:55.183 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:35:55.184 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 20:35:55.184 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 445 ms
+07-May-2016 20:35:55.207 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 20:35:55.207 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 20:35:55.423 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-May-2016 20:35:55.427 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:35:55.443 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 258 ms
+07-May-2016 20:47:39.526 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-May-2016 20:47:39.579 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:47:39.630 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-May-2016 20:47:39.646 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+07-May-2016 20:47:39.647 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 20:47:39.648 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-May-2016 20:47:39.648 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:35:44.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 22:35:44.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 22:35:44.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 22:35:44.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 22:35:44.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 22:35:44.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 22:35:44.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 22:35:44.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 22:35:44.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 22:35:44.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:35:44.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:35:44.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 22:35:44.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 22:35:44.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 22:35:44.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:35:44.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:35:44.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 22:35:44.138 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 22:35:44.774 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 22:35:44.842 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 22:35:44.844 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:35:44.846 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 22:35:44.846 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1977 ms
+07-May-2016 22:35:44.899 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 22:35:44.900 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 22:35:45.481 INFO [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [147] milliseconds.
+07-May-2016 22:35:45.529 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-May-2016 22:35:45.533 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:35:45.546 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 699 ms
+07-May-2016 22:36:25.559 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+07-May-2016 22:36:25.736 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+07-May-2016 22:36:25.828 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-May-2016 22:36:25.829 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-May-2016 22:36:25.881 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:36:25.932 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-May-2016 22:36:25.941 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+07-May-2016 22:36:25.943 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:36:25.944 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-May-2016 22:36:25.953 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:36:30.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 22:36:30.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 22:36:30.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 22:36:30.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 22:36:30.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 22:36:30.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 22:36:30.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 22:36:30.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 22:36:30.741 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 22:36:30.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:36:30.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:36:30.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 22:36:30.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 22:36:30.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 22:36:30.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:36:30.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:36:30.742 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 22:36:30.742 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 22:36:30.881 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 22:36:30.896 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 22:36:30.899 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:36:30.902 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 22:36:30.902 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 492 ms
+07-May-2016 22:36:30.921 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 22:36:30.921 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 22:36:31.188 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-May-2016 22:36:31.194 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:36:31.206 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 303 ms
+07-May-2016 22:37:08.394 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-May-2016 22:37:08.395 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-May-2016 22:37:08.448 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:37:08.498 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-May-2016 22:37:08.509 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+07-May-2016 22:37:08.510 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:37:08.510 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-May-2016 22:37:08.511 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:37:10.538 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 22:37:10.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 22:37:10.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 22:37:10.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 22:37:10.539 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 22:37:10.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 22:37:10.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 22:37:10.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 22:37:10.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 22:37:10.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:37:10.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:37:10.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 22:37:10.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 22:37:10.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 22:37:10.540 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:37:10.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:37:10.541 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 22:37:10.541 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 22:37:10.671 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 22:37:10.684 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 22:37:10.687 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:37:10.688 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 22:37:10.688 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 487 ms
+07-May-2016 22:37:10.706 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 22:37:10.706 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 22:37:10.965 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-May-2016 22:37:10.974 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:37:10.987 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 298 ms
+07-May-2016 22:38:18.044 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-May-2016 22:38:18.044 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-May-2016 22:38:18.096 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:38:18.147 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-May-2016 22:38:18.159 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+07-May-2016 22:38:18.253 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:38:18.253 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-May-2016 22:38:18.254 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:38:19.392 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 22:38:19.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 22:38:19.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 22:38:19.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 22:38:19.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 22:38:19.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 22:38:19.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 22:38:19.394 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 22:38:19.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 22:38:19.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:38:19.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:38:19.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 22:38:19.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 22:38:19.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 22:38:19.395 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:38:19.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:38:19.396 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 22:38:19.396 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 22:38:19.531 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 22:38:19.543 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 22:38:19.546 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:38:19.548 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 22:38:19.548 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 504 ms
+07-May-2016 22:38:19.570 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 22:38:19.570 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 22:38:19.824 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-May-2016 22:38:19.828 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:38:19.838 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 290 ms
+07-May-2016 22:39:39.829 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] has started
+07-May-2016 22:39:39.857 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.core.StandardContext.reload Reloading Context with name [] is completed
+07-May-2016 22:39:43.233 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-May-2016 22:39:43.234 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-May-2016 22:39:43.286 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:39:43.336 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-May-2016 22:39:43.342 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+07-May-2016 22:39:43.343 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:39:43.343 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-May-2016 22:39:43.344 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:39:44.687 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 22:39:44.688 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 22:39:44.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 22:39:44.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 22:39:44.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 22:39:44.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 22:39:44.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 22:39:44.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 22:39:44.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 22:39:44.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:39:44.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:39:44.689 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 22:39:44.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 22:39:44.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 22:39:44.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:39:44.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:39:44.690 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 22:39:44.690 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 22:39:44.803 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 22:39:44.816 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 22:39:44.818 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:39:44.819 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 22:39:44.820 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 458 ms
+07-May-2016 22:39:44.835 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 22:39:44.836 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 22:39:45.084 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-May-2016 22:39:45.088 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:39:45.110 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 290 ms
+07-May-2016 22:46:49.026 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+07-May-2016 22:46:49.026 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-80"]
+07-May-2016 22:46:49.078 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:46:49.129 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+07-May-2016 22:46:49.142 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-80"]
+07-May-2016 22:46:49.143 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:46:49.144 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-80"]
+07-May-2016 22:46:49.145 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:46:50.592 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+07-May-2016 22:46:50.593 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+07-May-2016 22:46:50.593 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+07-May-2016 22:46:50.593 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+07-May-2016 22:46:50.593 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+07-May-2016 22:46:50.594 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+07-May-2016 22:46:50.594 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+07-May-2016 22:46:50.594 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+07-May-2016 22:46:50.594 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+07-May-2016 22:46:50.594 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:46:50.594 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:46:50.594 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+07-May-2016 22:46:50.594 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+07-May-2016 22:46:50.594 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+07-May-2016 22:46:50.594 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:46:50.594 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+07-May-2016 22:46:50.595 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+07-May-2016 22:46:50.595 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+07-May-2016 22:46:50.709 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+07-May-2016 22:46:50.725 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 22:46:50.729 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:46:50.731 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+07-May-2016 22:46:50.731 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 473 ms
+07-May-2016 22:46:50.748 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+07-May-2016 22:46:50.748 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+07-May-2016 22:46:50.989 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+07-May-2016 22:46:50.993 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+07-May-2016 22:46:51.002 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 270 ms

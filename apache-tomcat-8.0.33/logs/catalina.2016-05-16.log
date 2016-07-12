@@ -1,0 +1,28 @@
+16-May-2016 20:53:39.252 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+16-May-2016 20:53:39.270 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+16-May-2016 20:53:39.270 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+16-May-2016 20:53:39.270 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+16-May-2016 20:53:39.270 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.2.0-27-generic
+16-May-2016 20:53:39.270 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+16-May-2016 20:53:39.270 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jdk1.8.0_73/jre
+16-May-2016 20:53:39.270 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_73-b02
+16-May-2016 20:53:39.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+16-May-2016 20:53:39.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+16-May-2016 20:53:39.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+16-May-2016 20:53:39.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/conf/logging.properties
+16-May-2016 20:53:39.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-May-2016 20:53:39.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/endorsed
+16-May-2016 20:53:39.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+16-May-2016 20:53:39.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33
+16-May-2016 20:53:39.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/alwaysqq/IdeaProjects/arc1/apache-tomcat-8.0.33/temp
+16-May-2016 20:53:39.272 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+16-May-2016 20:53:39.855 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-80"]
+16-May-2016 20:53:39.920 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-May-2016 20:53:39.922 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+16-May-2016 20:53:39.923 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-May-2016 20:53:39.923 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1865 ms
+16-May-2016 20:53:39.988 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+16-May-2016 20:53:39.988 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+16-May-2016 20:53:40.584 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-80"]
+16-May-2016 20:53:40.589 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+16-May-2016 20:53:40.612 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 688 ms

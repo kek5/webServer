@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="homeWork">
+    <path id="servlets">
+        <pathelement location="apache-tomcat-8.0.33/lib/servlet-api.jar"/>
+    </path>
+
+    <property file="homeWork.properties"/>
+    <target name="compile">
+        <javac srcdir="src" destdir="web/WEB-INF/classes" failonerror="true" fork="true">
+            <classpath refid="servlets"/>
+        </javac>
+    </target>
+</project>

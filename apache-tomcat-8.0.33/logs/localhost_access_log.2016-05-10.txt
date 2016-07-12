@@ -1,0 +1,7 @@
+127.0.0.1 - - [10/May/2016:21:46:45 +0300] "GET /hello HTTP/1.1" 302 -
+127.0.0.1 - - [10/May/2016:21:46:45 +0300] "GET /hello/ HTTP/1.1" 200 10
+127.0.0.1 - - [10/May/2016:21:46:45 +0300] "GET /favicon.ico HTTP/1.1" 404 1016
+127.0.0.1 - - [10/May/2016:21:46:53 +0300] "GET /hello/get/?first_name=Chuck&last_name=Norris&profession=Godlike+Ranger HTTP/1.1" 200 1274
+127.0.0.1 - - [10/May/2016:21:47:02 +0300] "GET /hello/post/ HTTP/1.1" 200 -
+127.0.0.1 - - [10/May/2016:21:47:05 +0300] "GET /hello/post/index.html HTTP/1.1" 304 -
+127.0.0.1 - - [10/May/2016:21:47:11 +0300] "POST /hello/post/ HTTP/1.1" 200 1249

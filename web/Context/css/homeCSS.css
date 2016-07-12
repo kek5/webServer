@@ -1,0 +1,160 @@
+body {
+    width:960px;
+    /*font-size: 0.72em;*/
+}
+#logo {
+    margin-top: -10px;
+    padding-left: 2%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    font-size:1.7em;
+    font-weight: 600;
+    font-family:Helvetica;
+    color: #4d4d4d;
+    background-color: #f1a95c;
+
+}
+div.page section>h1 {
+    position: relative;
+    width: 100%;
+    margin-top: 35px;
+    font-size:2em;
+    font-family:Helvetica;
+    background: radial-gradient(circle, grey, #f0f0ff);
+}
+div.page h2 {
+    font-weight: bolder;
+    font-size: 1.4em;
+    font-family: Helvetica;
+    margin-bottom: -5px;
+}
+div.page p {
+    text-indent: 20px;
+    font-family: Helvetica; /* don't get the font-family*/
+}
+div.page blockquote {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 25px;
+    border-left: 1px dotted;
+    font-style: italic;
+    font-family: Georgia;
+}
+div.page li{
+    font-family: Helvetica; /* don't get the font-family*/
+}
+
+div.page figure {
+    margin-top: -20px;
+    border: 1px solid gray;
+    display: inline-block;
+    margin-right: 30px;
+    border-radius: 7px;
+}
+div.page figcaption {
+    text-align: center;
+    padding: 10px;
+    background-color: yellow;
+    border-radius: 7px;
+    /*font-weight: lighter;*/
+}
+div.page figure.first {
+    margin-left: 30px;
+    /*position: relative;*/
+    width: 26%;
+    padding: 5px;
+}
+div.page figure.second {
+    position: relative;
+    width: 26%;
+    padding: 5px;
+    margin-left: 0;
+}
+div.page figure.third {
+    position: relative;
+    width: 26%;
+    padding: 5px;
+    margin-left: 0px;
+}
+div.page table, td, th {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+div.page td, th {
+    height: 30px;
+    width: 10%;
+}
+div.page table {
+    margin-top: -20px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: Helvetica;
+}
+div.page tbody tr:nth-child(even) {
+    background-color: #E5E5FF;
+}
+div.page tbody tr:nth-child(odd) {
+    background-color: #F0F0FF;
+}
+
+div.page section>p>code {
+    color: #325095;
+}
+body > section>code {
+    position: relative;
+    width: 100%;
+}
+div.page section>code {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-family: monospace;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 160%;
+    white-space: pre;
+    display: block;
+    color: #9BFF9B;
+    background-color: #4D4D4D;
+}
+
+
+div.page ul>li {
+    padding-bottom: 10px;
+}
+div.page ul {
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+
+body>footer  {
+    background-color: #f1a95c;
+    width: inherit;
+    position: absolute;
+    padding-bottom: 25px;
+    padding-top: 30px;
+}
+
+footer>div {
+    font-weight: 600;
+    display: inline;
+    font-family:Helvetica;
+    font-size:1em;
+    color: #4d4d4d;
+    width: auto;
+}
+
+#copyright {
+    position: relative;
+    padding-left: 2%;
+}
+#extra {
+    position: relative;
+    float: right;
+    padding-right: 2%;
+}
+
+
+
